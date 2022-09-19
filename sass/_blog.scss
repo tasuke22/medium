@@ -1,0 +1,31 @@
+.blog {
+  background-color: #eefbfb;
+  padding-bottom: 90px;
+  &__card-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 0 30px;
+    padding-top: 55px;
+  }
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    padding-bottom: 60px;
+    p {
+      color: #333333;
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding-top: 20px;
+    }
+    time {
+      color: #444444;
+      font-weight: bold;
+      position: absolute;
+      top: 90%;
+      left: 65%;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.main-visual {
+  background: url(../img/楕円形\ 1.png) no-repeat;
+  background-position: 84% 70%;
+  // margin-bottom: 200px;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  &__title {
+    font-size: 3.2rem;
+    line-height: 38px;
+    font-weight: bold;
+  }
+  &__sub-title {
+    font-size: 1.4rem;
+    line-height: 19px;
+    font-weight: bold;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 38px 0;
+  }
+}

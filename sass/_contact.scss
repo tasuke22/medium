@@ -1,0 +1,37 @@
+.contact {
+  background-color: #05a5fa;
+  padding-bottom: 70px;
+  &__title {
+    text-align: center;
+    color: #fff;
+    padding-top: 42px;
+    padding-bottom: 44px;
+    line-height: 19px;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+  }
+  &__form {
+    padding: 40px 64px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    input {
+      background-color: #eefbfb;
+      // width: 70%;
+      padding-top: 20px;
+    }
+    textarea {
+      background-color: #eefbfb;
+    }
+  }
+  &__center {
+    text-align: center;
+    margin-top: 33px;
+    button {
+      margin-top: 33px;
+    }
+  }
+}

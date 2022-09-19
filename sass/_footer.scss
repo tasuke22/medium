@@ -1,0 +1,14 @@
+.footer {
+  &__wrap {
+    text-align: center;
+    span {
+      padding-left: 30px;
+    }
+  }
+  &__title {
+    padding: 50px 0 30px;
+  }
+  &__copy {
+    padding: 60px 0 50px;
+  }
+}

@@ -1,0 +1,36 @@
+.feature {
+  margin-bottom: 156px;
+  &__main-title {
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 54px;
+    font-weight: bold;
+    font-size: 2.8rem;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    // gap: 0 100px;
+  }
+  &__box-title {
+    display: block;
+  }
+  &__box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // padding-right: 157px;
+    h3 {
+      font-size: 2.4rem;
+      font-weight: bold;
+      line-height: 48px;
+      padding-bottom: 54px;
+    }
+    span {
+      line-height: 26px;
+    }
+  }
+  &__box--reverse {
+    flex-direction: row-reverse;
+  }
+}

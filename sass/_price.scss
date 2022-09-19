@@ -1,0 +1,29 @@
+.price {
+  background-color: #eefbfb;
+  &__table {
+    margin-top: 65px;
+    background-color: #fff;
+    border-collapse: collapse;
+    border: 1px solid #333;
+    font-weight: bold;
+    th {
+      border-collapse: collapse;
+      border: 1px solid #333;
+      padding: 40px;
+      width: 6%;
+    }
+    td {
+      border-collapse: collapse;
+      border: 1px solid #333;
+      padding: 40px;
+      width: 15%;
+    }
+  }
+  &__postscript {
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    font-weight: bold;
+  }
+}
