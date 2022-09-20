@@ -9,25 +9,24 @@ $(function () {
 });
 
 const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  direction: "horizontal",
   loop: true,
-  speed:1000,
-  
-
-  // If we need pagination
+  slidesPerView: 5,
+  centeredSlides: true,
+  spaceBetween: 20,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  speed: 2000,
+  effect: "slide",
+  touchStartForcePreventDefault: false,
+  passiveListeners: false,
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
   },
 });
