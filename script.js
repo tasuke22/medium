@@ -13,10 +13,10 @@ const swiper = new Swiper(".swiper", {
   slidesPerView: 5,
   centeredSlides: true,
   spaceBetween: 20,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
   speed: 2000,
   effect: "slide",
   touchStartForcePreventDefault: false,
