@@ -1,3 +1,11 @@
+AOS.init({
+  offset: 300,
+  delay: 150,
+  duration: 500,
+  easing: "ease-in",
+  once: true,
+});
+
 // アコーディオン
 $(function () {
   $(".js-qurstion")
