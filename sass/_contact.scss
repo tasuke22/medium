@@ -1,6 +1,13 @@
 .contact {
   background-color: #05a5fa;
+  background-image: linear-gradient(to right, #05a5fa, #63fbd7);
   padding-bottom: 70px;
+  &__input-name {
+    width: 65%;
+  }
+  &__input-email {
+    width: 65%;
+  }
   &__title {
     text-align: center;
     color: #fff;
@@ -20,8 +27,8 @@
     flex-direction: column;
     input {
       background-color: #eefbfb;
-      // width: 70%;
       padding-top: 20px;
+      font-size: 100%;
     }
     textarea {
       background-color: #eefbfb;
@@ -32,6 +39,9 @@
     margin-top: 33px;
     button {
       margin-top: 33px;
+      :hover {
+        opacity: 0.5;
+      }
     }
   }
 }

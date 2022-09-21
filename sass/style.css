@@ -4,6 +4,7 @@ body {
   font-size: 1.2rem;
   font-size: 16px;
   width: 100%;
+  color: #333333;
 }
 
 html {
@@ -25,6 +26,7 @@ img {
 
 .button {
   font-size: 1.4rem;
+  font-weight: bold;
   width: 155px;
   max-width: 100%;
   text-align: center;
@@ -33,7 +35,8 @@ img {
   background-color: red;
   border-radius: 10px;
   color: #fff;
-  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  background-image: linear-gradient(to right, #fa41cc, #6020b0);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.16);
 }
 
 .button--center {
@@ -43,7 +46,7 @@ img {
 .section__title {
   font-size: 3.2rem;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 64px;
   padding-bottom: 20px;
 }
 
@@ -90,22 +93,30 @@ img {
   padding-bottom: 60px;
 }
 .blog__card p {
-  color: #333333;
   font-size: 1.8rem;
   font-weight: bold;
-  padding-top: 20px;
 }
 .blog__card time {
   color: #444444;
   font-weight: bold;
   position: absolute;
   top: 90%;
-  left: 65%;
+  left: 67%;
+}
+.blog__card-inner {
+  padding: 18px 18px 0px;
 }
 
 .contact {
   background-color: #05a5fa;
+  background-image: linear-gradient(to right, #05a5fa, #63fbd7);
   padding-bottom: 70px;
+}
+.contact__input-name {
+  width: 65%;
+}
+.contact__input-email {
+  width: 65%;
 }
 .contact__title {
   text-align: center;
@@ -128,6 +139,7 @@ img {
 .contact__form input {
   background-color: #eefbfb;
   padding-top: 20px;
+  font-size: 100%;
 }
 .contact__form textarea {
   background-color: #eefbfb;
@@ -139,6 +151,9 @@ img {
 .contact__center button {
   margin-top: 33px;
 }
+.contact__center button :hover {
+  opacity: 0.5;
+}
 
 .faq {
   margin-bottom: 86px;
@@ -148,6 +163,7 @@ img {
   font-weight: bold;
   padding: 22px 280px;
   text-align: center;
+  white-space: nowrap;
 }
 .faq__answer {
   font-size: 1.4rem;
@@ -197,7 +213,7 @@ img {
 .header {
   position: fixed;
   width: 100%;
-  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
   background-color: #fff;
   z-index: 99999;
 }
@@ -227,13 +243,13 @@ img {
 
 .main-visual {
   background: url(../img/楕円形\ 1.png) no-repeat;
-  background-position: 84% 70%;
+  background-position: 85% 105%;
+  margin-bottom: 125px;
 }
 .main-visual__wrap {
   display: flex;
   justify-content: space-between;
   padding-top: 200px;
-  padding-bottom: 200px;
 }
 .main-visual__title {
   font-size: 3.2rem;
@@ -280,21 +296,22 @@ img {
   padding-top: 40px;
   padding-bottom: 70px;
   font-weight: bold;
+  color: #444444;
 }
 
 .swiper {
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 
 .swiper_box {
-  width: 322px;
-  padding-bottom: 40px;
+  max-width: 320px;
+  padding-bottom: 26px;
   border: solid #dddddd;
   border-radius: 8px;
 }
 
 .swiper-wrapper {
-  padding-top: 20px;
+  padding-top: 70px;
   width: 500px;
 }
 
@@ -303,7 +320,14 @@ img {
   font-weight: bold;
 }
 .works__text h3 {
-  padding-bottom: 10px;
+  padding-bottom: 34px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.works__text p {
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 1.4rem;
 }
 
 .footer__wrap {
@@ -311,12 +335,16 @@ img {
 }
 .footer__wrap span {
   padding-left: 30px;
+  font-weight: bold;
 }
 .footer__title {
+  font-size: 2.4rem;
+  font-weight: bold;
   padding: 50px 0 30px;
 }
 .footer__copy {
   padding: 60px 0 50px;
+  font-size: 1.4rem;
 }
 
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */

@@ -1,15 +1,15 @@
 .swiper {
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 
 .swiper_box {
-  width: 322px;
-  padding-bottom: 40px;
+  max-width: 320px;
+  padding-bottom: 26px;
   border: solid #dddddd;
   border-radius: 8px;
 }
 .swiper-wrapper {
-  padding-top: 20px;
+  padding-top: 70px;
   width: 500px;
 }
 
@@ -20,6 +20,13 @@
   padding: 12px;
   font-weight: bold;
   h3 {
-    padding-bottom: 10px;
+    padding-bottom: 34px;
+    font-weight: bold;
+    line-height: 24px;
+  }
+  p {
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 1.4rem;
   }
 }

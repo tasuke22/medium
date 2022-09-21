@@ -1,13 +1,14 @@
+@use "mixin" as *;
+
 .main-visual {
   background: url(../img/楕円形\ 1.png) no-repeat;
-  background-position: 84% 70%;
-  // margin-bottom: 200px;
-
+  background-position: 85% 105%;
+  margin-bottom: 125px;
   &__wrap {
     display: flex;
     justify-content: space-between;
     padding-top: 200px;
-    padding-bottom: 200px;
+    // padding-bottom: 200px;
   }
   &__title {
     font-size: 3.2rem;

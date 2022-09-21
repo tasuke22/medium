@@ -15,17 +15,18 @@
     text-align: left;
     padding-bottom: 60px;
     p {
-      color: #333333;
       font-size: 1.8rem;
       font-weight: bold;
-      padding-top: 20px;
     }
     time {
       color: #444444;
       font-weight: bold;
       position: absolute;
       top: 90%;
-      left: 65%;
+      left: 67%;
     }
+  }
+  &__card-inner {
+    padding: 18px 18px 0px;
   }
 }
