@@ -1,3 +1,5 @@
+@use "mixin" as *;
+
 .feature {
   margin-bottom: 156px;
   &__main-title {
@@ -10,6 +12,14 @@
   &__box {
     display: flex;
     justify-content: space-between;
+    img {
+      width: 380px;
+      height: 314px;
+    }
+    @include mq(tab) {
+      display: block;
+      text-align: center;
+    }
   }
   &__box-title {
     display: block;

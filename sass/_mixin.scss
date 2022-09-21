@@ -13,3 +13,15 @@
     margin-bottom: calc((1 - #{$line-height}) * 0.5em);
   }
 }
+
+$breakpoint: (
+  sp: "screen and (max-width: 375px)",
+  tab: "screen and (max-width: 780px)",
+  pc: "screen and (max-width: 960px)",
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}

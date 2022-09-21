@@ -1,3 +1,5 @@
+@use "mixin" as *;
+
 .contact {
   background-color: #05a5fa;
   background-image: linear-gradient(to right, #05a5fa, #63fbd7);
@@ -25,6 +27,9 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    @include mq(sp) {
+      padding: 20px 20px;
+    }
     input {
       background-color: #eefbfb;
       padding-top: 20px;

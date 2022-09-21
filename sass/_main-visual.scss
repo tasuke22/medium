@@ -8,7 +8,16 @@
     display: flex;
     justify-content: space-between;
     padding-top: 200px;
-    // padding-bottom: 200px;
+    button {
+      @include mq(tab) {
+        margin: auto;
+      }
+    }
+
+    @include mq(tab) {
+      display: block;
+      text-align: center;
+    }
   }
   &__title {
     font-size: 3.2rem;
@@ -16,7 +25,6 @@
     font-weight: bold;
   }
   &__sub-title {
-    font-size: 1.4rem;
     line-height: 19px;
     font-weight: bold;
   }

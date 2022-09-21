@@ -1,15 +1,21 @@
+@use "mixin" as *;
+
 .header {
   position: fixed;
   width: 100%;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
   background-color: #fff;
   z-index: 99999;
-
   &__wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 94px;
+    button {
+      @include mq(tab) {
+        display: none;
+      }
+    }
   }
   &__logo {
     display: flex;
@@ -23,6 +29,9 @@
   &__list {
     display: flex;
     gap: 0 46px;
+    @include mq(tab) {
+      display: none;
+    }
   }
   &__item {
     font-size: 1.6rem;

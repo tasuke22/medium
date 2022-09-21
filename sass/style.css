@@ -1,7 +1,6 @@
 @charset "UTF-8";
 body {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 1.2rem;
   font-size: 16px;
   width: 100%;
   color: #333333;
@@ -84,13 +83,24 @@ img {
   gap: 0 30px;
   padding-top: 55px;
 }
+@media screen and (max-width: 780px) {
+  .blog__card-wrap {
+    display: block;
+    text-align: center;
+  }
+}
 .blog__card {
   position: relative;
   display: flex;
   flex-direction: column;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  text-align: left;
   padding-bottom: 60px;
+}
+@media screen and (max-width: 780px) {
+  .blog__card {
+    margin-bottom: 30px;
+    padding: 20px 20px;
+  }
 }
 .blog__card p {
   font-size: 1.8rem;
@@ -103,8 +113,25 @@ img {
   top: 90%;
   left: 67%;
 }
+@media screen and (max-width: 780px) {
+  .blog__card time {
+    text-align: center;
+    position: static;
+    margin-top: 20px;
+  }
+}
 .blog__card-inner {
   padding: 18px 18px 0px;
+}
+@media screen and (max-width: 780px) {
+  .blog__card-inner {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 780px) {
+  .blog__title {
+    padding: 10px 0;
+  }
 }
 
 .contact {
@@ -136,6 +163,11 @@ img {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 375px) {
+  .contact__form {
+    padding: 20px 20px;
+  }
+}
 .contact__form input {
   background-color: #eefbfb;
   padding-top: 20px;
@@ -161,16 +193,15 @@ img {
 .faq__question {
   font-size: 1.4rem;
   font-weight: bold;
-  padding: 22px 280px;
+  padding: 20px 0;
   text-align: center;
-  white-space: nowrap;
 }
 .faq__answer {
   font-size: 1.4rem;
   line-height: 26px;
   text-align: center;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 20px 35px;
   text-align: left;
   display: none;
 }
@@ -188,6 +219,16 @@ img {
 .feature__box {
   display: flex;
   justify-content: space-between;
+}
+.feature__box img {
+  width: 380px;
+  height: 314px;
+}
+@media screen and (max-width: 780px) {
+  .feature__box {
+    display: block;
+    text-align: center;
+  }
 }
 .feature__box-title {
   display: block;
@@ -223,6 +264,11 @@ img {
   align-items: center;
   height: 94px;
 }
+@media screen and (max-width: 780px) {
+  .header__wrap button {
+    display: none;
+  }
+}
 .header__logo {
   display: flex;
   align-items: center;
@@ -235,6 +281,11 @@ img {
 .header__list {
   display: flex;
   gap: 0 46px;
+}
+@media screen and (max-width: 780px) {
+  .header__list {
+    display: none;
+  }
 }
 .header__item {
   font-size: 1.6rem;
@@ -251,13 +302,23 @@ img {
   justify-content: space-between;
   padding-top: 200px;
 }
+@media screen and (max-width: 780px) {
+  .main-visual__wrap button {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 780px) {
+  .main-visual__wrap {
+    display: block;
+    text-align: center;
+  }
+}
 .main-visual__title {
   font-size: 3.2rem;
   line-height: 38px;
   font-weight: bold;
 }
 .main-visual__sub-title {
-  font-size: 1.4rem;
   line-height: 19px;
   font-weight: bold;
 }
@@ -278,17 +339,36 @@ img {
   border: 1px solid #333;
   font-weight: bold;
 }
+@media screen and (max-width: 780px) {
+  .price__table {
+    width: 100%;
+    text-align: center;
+  }
+}
 .price__table th {
   border-collapse: collapse;
   border: solid #dddddd;
   padding: 40px;
   width: 6%;
 }
+@media screen and (max-width: 780px) {
+  .price__table th {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
 .price__table td {
   border-collapse: collapse;
   border: solid #dddddd;
   padding: 40px;
   width: 15%;
+}
+@media screen and (max-width: 780px) {
+  .price__table td {
+    display: block;
+    width: 100%;
+  }
 }
 .price__postscript {
   display: block;
@@ -308,6 +388,11 @@ img {
   padding-bottom: 26px;
   border: solid #dddddd;
   border-radius: 8px;
+}
+@media screen and (max-width: 375px) {
+  .swiper_box {
+    margin: auto;
+  }
 }
 
 .swiper-wrapper {
@@ -336,6 +421,15 @@ img {
 .footer__wrap span {
   padding-left: 30px;
   font-weight: bold;
+}
+@media screen and (max-width: 780px) {
+  .footer__wrap span {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-left: 0;
+  }
 }
 .footer__title {
   font-size: 2.4rem;

@@ -1,3 +1,5 @@
+@use "mixin" as *;
+
 .swiper {
   margin-bottom: 90px;
 }
@@ -7,6 +9,9 @@
   padding-bottom: 26px;
   border: solid #dddddd;
   border-radius: 8px;
+  @include mq(sp) {
+    margin: auto;
+  }
 }
 .swiper-wrapper {
   padding-top: 70px;

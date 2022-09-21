@@ -1,8 +1,8 @@
 AOS.init({
-  offset: 300,
-  delay: 150,
+  // offset: 300,
+  // delay: 0,
   duration: 500,
-  easing: "ease-in",
+  // easing: "ease-in",
   once: true,
 });
 
@@ -34,9 +34,9 @@ $(function () {
 
 const swiper = new Swiper(".swiper", {
   loop: true,
-  slidesPerView: 5,
   centeredSlides: true,
-  spaceBetween: 20,
+  slidesPerView: 1,
+  spaceBetween: 0,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
@@ -52,6 +52,24 @@ const swiper = new Swiper(".swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    375: {
+      // 375 ~ 780
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    780: {
+      // 780 ~ 960
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    960: {
+      // 960 ~
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
   },
 });
 

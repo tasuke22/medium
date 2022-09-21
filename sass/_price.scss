@@ -1,3 +1,5 @@
+@use "mixin" as *;
+
 .price {
   background-color: #eefbfb;
   &__table {
@@ -6,17 +8,30 @@
     border-collapse: collapse;
     border: 1px solid #333;
     font-weight: bold;
+    @include mq(tab) {
+      width: 100%;
+      text-align: center;
+    }
     th {
       border-collapse: collapse;
       border: solid #dddddd;
       padding: 40px;
       width: 6%;
+      @include mq(tab) {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
     }
     td {
       border-collapse: collapse;
       border: solid #dddddd;
       padding: 40px;
       width: 15%;
+      @include mq(tab) {
+        display: block;
+        width: 100%;
+      }
     }
   }
   &__postscript {
