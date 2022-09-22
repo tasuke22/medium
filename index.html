@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex">
-  <title>中級</title>
-  <meta name="description" content="石井総合内科は山形県山形市七日町の総合内科です">
+  <title>ユアコーディング </title>
+  <meta name="description" content="コーディングの手間を最小に、デザインに注力する助けに">
   <link rel="stylesheet" href="sass/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="icon" href="./img/logo.svg" type="image/svg+xml">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -26,7 +27,7 @@
           <img src="./img/Pink and Purple Events & party Entertainment Logo.png" alt="">
           <h1>ユアコーディング</h1>
         </div><!-- /.header_logo -->
-        <nav>
+        <nav class="js-drawer-nav open">
           <ul class="header__list">
             <li class="header__item"><a href="#feature">特徴</a></li>
             <li class="header__item"><a href="#price">価格</a></li>
@@ -34,6 +35,11 @@
           </ul>
         </nav>
         <button class="button"><a href="#contact">お問い合わせ</a></button>
+        <button type="button" class="js-drawer-btn open">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div><!-- /.header__wrap -->
     </div><!-- /.container -->
   </div><!-- /.header -->
@@ -122,8 +128,6 @@
     <div class="container">
       <h2 class="section__title">価格</h2>
       <span class="section__sub-title">price</span><!-- /.feature__sub-title -->
-
-
       <table class="price__table">
         <tr>
           <th>HTMLコーディングトップページ</th><!-- / -->
@@ -142,11 +146,7 @@
           <td>15,000円〜</td>
         </tr>
       </table><!-- /.price__list -->
-
-
       <span class="price__postscript">＊詳細な価格はページや仕様によって異なります</span><!-- /.price__postscript -->
-
-
     </div><!-- /.container -->
   </section><!-- /.price -->
 
@@ -154,7 +154,6 @@
     <div class="container">
       <h2 class="section__title">よくある質問</h2><!-- /.section__title -->
       <div class="section__sub-title">faq</div><!-- /.section__sub-title -->
-
       <dt class="faq__question js-question">デザインから一貫してお願いすることは可能でしょうか？</dt><!-- /.faq__question -->
       <dd class="faq__answer">
         ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。<br>
@@ -169,16 +168,13 @@
         HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安に<br>
         なります。
       </dd><!-- /.faq__answer -->
-
     </div><!-- /.container -->
   </section><!-- /.faq -->
-
 
   <section class="blog" data-aos="fadeInUp">
     <h2 class="section__title">ブログ</h2><!-- /.section__title -->
     <div class="section__sub-title">blog</div><!-- /.section__sub-title -->
     <div class="blog__card-wrap">
-
       <article class="blog__card">
         <img src="./img/austin-distel-wawEfYdpkag-unsplash.png" alt="" class="blog__img">
         <div class="blog__card-inner">
@@ -186,7 +182,6 @@
           <time datetime="2020.01.23">2020.01.23</time>
         </div><!-- /.blog__card-inner -->
       </article><!-- /.blog__card -->
-
       <article class="blog__card">
         <img src="./img/dylan-gillis-KdeqA3aTnBY-unsplash.png" alt="" class="blog__img">
         <div class="blog__card-inner">
@@ -212,7 +207,6 @@
   <section class="works" data-aos="fadeInUp">
     <h2 class="section__title">制作実績</h2><!-- /.section__title -->
     <div class="section__sub-title">works</div><!-- /.section__sub-title -->
-
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -230,7 +224,6 @@
             </div><!-- /.works__text -->
           </div><!-- /.swiper_box -->
         </div>
-
         <div class="swiper-slide">
           <div class="swiper_box">
             <img src="/img/hal-gatewood-tZc3vjPCk-Q-unsplash.png" alt="" class="">
@@ -245,7 +238,6 @@
             </div><!-- /.works__text -->
           </div><!-- /.swiper_box -->
         </div>
-
         <div class="swiper-slide">
           <div class="swiper_box">
             <img src="/img/arnel-hasanovic-MNd-Rka1o0Q-unsplash.png" alt="" class="">
@@ -262,7 +254,6 @@
         </div>
       </div>
     </div>
-
   </section><!-- /.works -->
 
   <section id="contact" class="contact" data-aos="fadeInUp">
@@ -273,41 +264,32 @@
         コーディングの人出が足りないとき、<br>
         あなたの力になります
       </p><!-- /.contact__title -->
-
       <form id="form" class="contact__form" action="">
-
         <div class="contact__wrap">
           <div class="contact__item">
             <label for="name">お名前</label>
             <span class="badge">必須</span><!-- /.badge -->
           </div>
-          <input class="contact__input-name" type="name" id="name" required size="19">
-
+          <input class="contact__input-name" type="name" id="name" required>
           <div class="contact__item">
             <label for="email">メールアドレス</label>
             <span class="badge">必須</span><!-- /.badge -->
           </div>
           <input class="contact__input-name" type="email" id="email" required>
-
           <div class="contact__item">
             <label for="textarea">お問い合わせ内容</label>
             <span class="badge">必須</span><!-- /.badge -->
           </div>
           <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea><!-- /# -->
         </div>
-
-
         <div class="contact__center">
           <input class="contact__checkbox" type="checkbox" id="privacy-check" name="">
           <label for="privacy-check">プライバシーポリシーに同意する</label>
           <button type="submit" class="button button--center js-submit" disabled>送信する</button>
         </div><!-- /.contact__center -->
-
-
       </form>
     </div><!-- /.container -->
   </section><!-- /.contact -->
-
 
   <footer class="footer">
     <div class="container">
@@ -320,14 +302,11 @@
     </div><!-- /.container -->
   </footer><!-- /.footer -->
 
-
-
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./script.js"></script>
-
 </body>
 
 </html>

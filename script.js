@@ -1,12 +1,11 @@
 AOS.init({
-  // offset: 300,
-  // delay: 0,
+  offset: 100,
+  delay: 0,
   duration: 500,
-  // easing: "ease-in",
+  easing: "ease-in",
   once: true,
 });
 
-// アコーディオン
 $(function () {
   $(".js-question")
     .on("click", function () {
@@ -17,16 +16,12 @@ $(function () {
 });
 
 $(function () {
-  // #で始まるa要素をクリックした場合に処理（"#"←ダブルクォーテンションで囲むのを忘れずに。忘れるとjQueryのバージョンによっては動かない。。）
   $('a[href^="#"]').click(function () {
-    var speed = 400;
-    var adjust = -100;
-    // アンカーの値取得 リンク先（href）を取得して、hrefという変数に代入
-    var href = $(this).attr("href");
-    // 移動先を取得 リンク先(href）のidがある要素を探して、targetに代入
-    var target = $(href == "#" || href == "" ? "html" : href);
-    // 移動先を調整 idの要素の位置をoffset()で取得して、positionに代入
-    var position = target.offset().top + adjust;
+    let speed = 400;
+    let adjust = -100;
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? "html" : href);
+    let position = target.offset().top + adjust;
     $("body,html").animate({ scrollTop: position }, speed, "swing");
     return false;
   });
@@ -87,4 +82,15 @@ $(document).ready(function () {
       $submitBtn.prop("disabled", true);
     }
   });
+});
+
+$(function () {
+  $(".js-drawer-btn").on("click", function () {
+    $(this).toggleClass("open");
+    $(".js-drawer-nav").toggleClass("open");
+  });
+});
+
+$(".header__list a[href]").on("click", function (event) {
+  $(".js-drawer-btn").trigger("click");
 });

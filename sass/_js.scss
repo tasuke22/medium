@@ -1,0 +1,78 @@
+@use "mixin" as *;
+
+.js-drawer-btn {
+  display: none;
+  @include mq(tab) {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: relative;
+  }
+}
+
+.js-drawer-btn span {
+  @include mq(tab) {
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: #000;
+  }
+}
+
+.js-drawer-btn span:nth-child(1) {
+  @include mq(tab) {
+    top: 0;
+  }
+}
+.js-drawer-btn span:nth-child(2) {
+  @include mq(tab) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.js-drawer-btn span:nth-child(3) {
+  @include mq(tab) {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+}
+
+.js-drawer-btn.open span:nth-child(1) {
+  @include mq(tab) {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+}
+.js-drawer-btn.open span:nth-child(2) {
+  @include mq(tab) {
+    display: none;
+  }
+}
+.js-drawer-btn.open span:nth-child(3) {
+  @include mq(tab) {
+    transform: rotate(-45deg);
+    top: 50%;
+  }
+}
+
+.js-drawer-nav {
+  @include mq(tab) {
+    position: fixed;
+    top: 90px;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    opacity: 0.9;
+    right: -100%;
+    transition: right 0.5s;
+    opacity: 0.8;
+  }
+}
+
+.js-drawer-nav.open {
+  @include mq(tab) {
+    right: 0;
+  }
+}
