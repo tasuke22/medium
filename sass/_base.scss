@@ -37,6 +37,11 @@ img {
   font-size: 1.4rem;
   text-align: center;
 }
+.button--header {
+  @include mq(tab) {
+    display: none;
+  }
+}
 .button--center {
   margin: auto;
 }

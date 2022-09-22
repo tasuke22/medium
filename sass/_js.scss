@@ -59,7 +59,7 @@
 
 .js-drawer-nav {
   @include mq(tab) {
-    opacity: .9;
+    opacity: .8;
     position: fixed;
     top: 90px;
     right: -100%;

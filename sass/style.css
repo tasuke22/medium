@@ -38,6 +38,12 @@ img {
   text-align: center;
 }
 
+@media screen and (max-width: 780px) {
+  .button--header {
+    display: none;
+  }
+}
+
 .button--center {
   margin: auto;
 }
@@ -293,12 +299,6 @@ img {
   }
 }
 
-@media screen and (max-width: 780px) {
-  .button {
-    display: none;
-  }
-}
-
 .main-visual {
   margin-bottom: 125px;
   background: url(../img/楕円形\ 1.png) no-repeat;
@@ -513,7 +513,7 @@ img {
 
 @media screen and (max-width: 780px) {
   .js-drawer-nav {
-    opacity: 0.9;
+    opacity: 0.8;
     position: fixed;
     top: 90px;
     right: -100%;
