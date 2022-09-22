@@ -1,23 +1,23 @@
 @use "mixin" as *;
 
 .js-drawer-btn {
-  display: none;
   @include mq(tab) {
     display: block;
+    position: relative;
     width: 40px;
     height: 32px;
-    position: relative;
   }
+  display: none;
 }
 
 .js-drawer-btn span {
   @include mq(tab) {
     display: block;
-    width: 100%;
-    height: 4px;
     position: absolute;
     left: 0;
-    background: #000;
+    width: 100%;
+    height: 4px;
+    background: #000000;
   }
 }
 
@@ -41,8 +41,8 @@
 
 .js-drawer-btn.open span:nth-child(1) {
   @include mq(tab) {
-    transform: rotate(45deg);
     top: 50%;
+    transform: rotate(45deg);
   }
 }
 .js-drawer-btn.open span:nth-child(2) {
@@ -52,22 +52,22 @@
 }
 .js-drawer-btn.open span:nth-child(3) {
   @include mq(tab) {
-    transform: rotate(-45deg);
     top: 50%;
+    transform: rotate(-45deg);
   }
 }
 
 .js-drawer-nav {
   @include mq(tab) {
+    opacity: .9;
+    opacity: .8;
     position: fixed;
     top: 90px;
+    right: -100%;
     width: 100%;
     height: 100vh;
-    background: #fff;
-    opacity: 0.9;
-    right: -100%;
-    transition: right 0.5s;
-    opacity: 0.8;
+    background: #ffffff;
+    transition: right .5s;
   }
 }
 

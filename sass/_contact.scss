@@ -1,9 +1,9 @@
 @use "mixin" as *;
 
 .contact {
-  background-color: #05a5fa;
-  background-image: linear-gradient(to right, #05a5fa, #63fbd7);
   padding-bottom: 70px;
+  background-image: linear-gradient(to right, #05a5fa, #63fbd7);
+  background-color: #05a5fa;
   &__input-name {
     width: 65%;
   }
@@ -11,36 +11,37 @@
     width: 65%;
   }
   &__title {
-    text-align: center;
-    color: #fff;
     padding-top: 42px;
     padding-bottom: 44px;
+    color: #ffffff;
     line-height: 19px;
+    text-align: center;
   }
   &__wrap {
     display: flex;
     flex-direction: column;
+
     gap: 30px 0;
   }
   &__form {
-    padding: 40px 64px;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
     @include mq(sp) {
       padding: 20px 20px;
     }
+    display: flex;
+    flex-direction: column;
+    padding: 40px 64px;
+    background-color: #ffffff;
     input {
-      background-color: #eefbfb;
       padding: 8px 0;
+      background-color: #eefbfb;
     }
     textarea {
       background-color: #eefbfb;
     }
   }
   &__center {
-    text-align: center;
     margin-top: 33px;
+    text-align: center;
     button {
       margin-top: 33px;
       :hover {

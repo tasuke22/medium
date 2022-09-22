@@ -5,20 +5,17 @@
 }
 
 .swiper_box {
+  @include mq(sp) {
+    margin: auto;
+  }
   max-width: 320px;
   padding-bottom: 26px;
   border: solid #dddddd;
   border-radius: 8px;
-  @include mq(sp) {
-    margin: auto;
-  }
 }
 .swiper-wrapper {
-  padding-top: 70px;
   width: 500px;
-}
-
-.swiper-slide {
+  padding-top: 70px;
 }
 
 .works__text {
@@ -31,7 +28,7 @@
   }
   p {
     font-weight: bold;
-    line-height: 24px;
     font-size: 1.4rem;
+    line-height: 24px;
   }
 }

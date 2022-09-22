@@ -1,18 +1,18 @@
 .faq {
   margin-bottom: 86px;
   &__question {
-    font-size: 1.4rem;
-    font-weight: bold;
     padding: 20px 0;
+    font-weight: bold;
+    font-size: 1.4rem;
     text-align: center;
   }
   &__answer {
+    display: none;
+    padding: 20px 35px;
+    background-color: #f2f2f2;
     font-size: 1.4rem;
     line-height: 26px;
     text-align: center;
-    background-color: #f2f2f2;
-    padding: 20px 35px;
     text-align: left;
-    display: none;
   }
 }
