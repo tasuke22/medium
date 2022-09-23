@@ -18,7 +18,7 @@ img {
 }
 
 .container {
-  max-width: 980px;
+  max-width: 1020px;
   margin: auto;
   padding: 0 20px;
 }
@@ -50,6 +50,7 @@ img {
   padding-bottom: 20px;
   font-size: 3.2rem;
   text-align: center;
+  font-weight: bold;
 }
 .section__sub-title {
   display: block;
@@ -57,6 +58,7 @@ img {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 30px;
 }
 .section__title--wthite {
   color: #ffffff;
@@ -71,4 +73,10 @@ img {
   border-radius: 10px;
   background-color: #0c449b;
   color: #ffffff;
+}
+
+br {
+  @include mq(sp) {
+    display: none;
+  }
 }

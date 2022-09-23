@@ -1,13 +1,14 @@
 @use "mixin" as *;
 
 .main-visual {
-  margin-bottom: 125px;
+  margin-bottom: 100px;
   background: url(../img/楕円形\ 1.png) no-repeat;
   background-position: 85% 105%;
   &__wrap {
     @include mq(tab) {
       display: block;
       text-align: center;
+      padding-top: 120px;
     }
     display: flex;
     justify-content: space-between;
@@ -19,19 +20,24 @@
     }
   }
   &__title {
+    @include mq(sp) {
+      font-size: 3rem;
+    }
     font-weight: bold;
     font-size: 3.2rem;
-    line-height: 38px;
+    line-height: 50px;
+    margin-bottom: 30px;
   }
   &__sub-title {
     font-weight: bold;
-    line-height: 19px;
+    line-height: 27px;
+    margin-bottom: 32px;
   }
   &__text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
 
-    gap: 38px 0;
+    // gap: 38px 0;
   }
 }
