@@ -18,7 +18,7 @@ img {
 }
 
 .container {
-  max-width: 980px;
+  max-width: 1020px;
   margin: auto;
   padding: 0 20px;
 }
@@ -53,6 +53,7 @@ img {
   padding-bottom: 20px;
   font-size: 3.2rem;
   text-align: center;
+  font-weight: bold;
 }
 
 .section__sub-title {
@@ -61,6 +62,7 @@ img {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 30px;
 }
 
 .section__title--wthite {
@@ -79,6 +81,12 @@ img {
   color: #ffffff;
 }
 
+@media screen and (max-width: 375px) {
+  br {
+    display: none;
+  }
+}
+
 .blog {
   padding-bottom: 90px;
   background-color: #eefbfb;
@@ -86,6 +94,7 @@ img {
 .blog__card-wrap {
   display: flex;
   justify-content: center;
+  padding: 0 30px;
   padding-top: 55px;
   gap: 0 30px;
 }
@@ -99,40 +108,44 @@ img {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  background-color: #ffffff;
 }
 @media screen and (max-width: 780px) {
   .blog__card {
     margin-bottom: 30px;
-    padding: 20px 20px;
   }
 }
 .blog__card p {
   font-weight: bold;
   font-size: 1.8rem;
 }
+@media screen and (max-width: 375px) {
+  .blog__card p {
+    text-align: start;
+  }
+}
+@media screen and (max-width: 780px) {
+  .blog__card p {
+    text-align: start;
+    font-size: 2.6rem;
+  }
+}
 .blog__card time {
   position: absolute;
-  top: 90%;
-  left: 67%;
+  right: 35px;
+  bottom: 10px;
   color: #444444;
   font-weight: bold;
 }
 @media screen and (max-width: 780px) {
   .blog__card time {
-    position: static;
     margin-top: 20px;
-    text-align: center;
   }
 }
 .blog__card-inner {
-  padding: 18px 18px 0;
-}
-@media screen and (max-width: 780px) {
-  .blog__card-inner {
-    padding: 20px 0;
-  }
+  padding: 18px 18px;
 }
 @media screen and (max-width: 780px) {
   .blog__title {
@@ -157,6 +170,11 @@ img {
   color: #ffffff;
   line-height: 19px;
   text-align: center;
+}
+@media screen and (max-width: 375px) {
+  .contact__title {
+    text-align: start;
+  }
 }
 .contact__wrap {
   display: flex;
@@ -197,6 +215,7 @@ img {
   font-weight: bold;
   font-size: 1.4rem;
   text-align: center;
+  border: solid 1px #e5e5e5;
 }
 .faq__answer {
   display: none;
@@ -206,13 +225,14 @@ img {
   line-height: 26px;
   text-align: center;
   text-align: left;
+  border: solid 1px #e5e5e5;
 }
 
 .feature {
   margin-bottom: 156px;
 }
 .feature__main-title {
-  padding-top: 65px;
+  padding-top: 35px;
   padding-bottom: 54px;
   font-weight: bold;
   font-size: 2.8rem;
@@ -221,15 +241,13 @@ img {
 .feature__box {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 @media screen and (max-width: 780px) {
   .feature__box {
     display: block;
     text-align: center;
   }
-}
-.feature__box img {
-  width: 380px;
 }
 .feature__box-title {
   display: block;
@@ -245,8 +263,19 @@ img {
   font-size: 2.4rem;
   line-height: 48px;
 }
+@media screen and (max-width: 375px) {
+  .feature__box-text h3 {
+    text-align: start;
+  }
+}
 .feature__box-text span {
   line-height: 26px;
+  font-weight: bold;
+}
+@media screen and (max-width: 375px) {
+  .feature__box-text span {
+    text-align: start;
+  }
 }
 .feature__box--reverse {
   flex-direction: row-reverse;
@@ -300,7 +329,7 @@ img {
 }
 
 .main-visual {
-  margin-bottom: 125px;
+  margin-bottom: 100px;
   background: url(../img/楕円形\ 1.png) no-repeat;
   background-position: 85% 105%;
 }
@@ -313,6 +342,7 @@ img {
   .main-visual__wrap {
     display: block;
     text-align: center;
+    padding-top: 120px;
   }
 }
 @media screen and (max-width: 780px) {
@@ -323,17 +353,22 @@ img {
 .main-visual__title {
   font-weight: bold;
   font-size: 3.2rem;
-  line-height: 38px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 375px) {
+  .main-visual__title {
+    font-size: 3rem;
+  }
 }
 .main-visual__sub-title {
   font-weight: bold;
-  line-height: 19px;
+  line-height: 27px;
+  margin-bottom: 32px;
 }
 .main-visual__text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 38px 0;
 }
 
 .price {
@@ -341,7 +376,7 @@ img {
 }
 .price__table {
   margin-top: 65px;
-  border: 1px solid #333333;
+  border: 1px solid #dddddd;
   background-color: #ffffff;
   font-weight: bold;
   border-collapse: collapse;
@@ -355,7 +390,7 @@ img {
 .price__table th {
   width: 6%;
   padding: 40px;
-  border: solid #dddddd;
+  border: solid 1px #dddddd;
   border-collapse: collapse;
 }
 @media screen and (max-width: 780px) {
@@ -368,7 +403,7 @@ img {
 .price__table td {
   width: 15%;
   padding: 40px;
-  border: solid #dddddd;
+  border: solid 1px #dddddd;
   border-collapse: collapse;
 }
 @media screen and (max-width: 780px) {
@@ -393,7 +428,7 @@ img {
 .swiper_box {
   max-width: 320px;
   padding-bottom: 26px;
-  border: solid #dddddd;
+  border: solid 1px #dddddd;
   border-radius: 8px;
 }
 @media screen and (max-width: 375px) {

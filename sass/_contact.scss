@@ -11,6 +11,9 @@
     width: 65%;
   }
   &__title {
+    @include mq(sp) {
+      text-align: start;
+    }
     padding-top: 42px;
     padding-bottom: 44px;
     color: #ffffff;
