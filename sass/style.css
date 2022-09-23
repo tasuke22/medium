@@ -342,7 +342,7 @@ img {
   .main-visual__wrap {
     display: block;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 260px;
   }
 }
 @media screen and (max-width: 780px) {
