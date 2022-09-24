@@ -270,12 +270,12 @@
             <label for="name">お名前</label>
             <span class="badge">必須</span><!-- /.badge -->
           </div>
-          <input class="contact__input-name" type="name" id="name" required>
+          <input class="contact__input-name" type="name" id="name" required style="height:35px;">
           <div class="contact__item">
             <label for="email">メールアドレス</label>
             <span class="badge">必須</span><!-- /.badge -->
           </div>
-          <input class="contact__input-name" type="email" id="email" required>
+          <input class="contact__input-name" type="email" id="email" required style="height:35px;">
           <div class="contact__item">
             <label for="textarea">お問い合わせ内容</label>
             <span class="badge">必須</span><!-- /.badge -->
@@ -283,8 +283,10 @@
           <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea><!-- /# -->
         </div>
         <div class="contact__center">
-          <input class="contact__checkbox" type="checkbox" id="privacy-check" name="">
-          <label for="privacy-check">プライバシーポリシーに同意する</label>
+          <div class="contact__check">
+            <input class="contact__checkbox" type="checkbox" id="privacy-check" name="" style="height:35px;">
+            <label for="privacy-check">プライバシーポリシーに同意する</label>
+          </div>
           <button type="submit" class="button button--center js-submit">送信する</button>
         </div><!-- /.contact__center -->
       </form>
