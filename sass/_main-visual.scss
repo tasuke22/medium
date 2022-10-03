@@ -2,7 +2,7 @@
 
 .main-visual {
   margin-bottom: 100px;
-  background: url(../img/楕円形\ 1.png) no-repeat;
+  background: url(../img/ellipse.png) no-repeat;
   background-position: 85% 105%;
   &__wrap {
     @include mq(tab) {
