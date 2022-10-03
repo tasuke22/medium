@@ -6,6 +6,7 @@
   background-color: #05a5fa;
   &__input-name {
     width: 65%;
+    padding: 10px;
     @include mq(tab) {
       width: 100%;
     }
@@ -38,6 +39,9 @@
     border: solid 1px #707070;
   }
   &__form {
+    textarea {
+      padding: 10px;
+    }
     @include mq(sp) {
       padding: 20px 20px;
     }

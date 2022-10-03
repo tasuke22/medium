@@ -161,6 +161,7 @@ img {
 }
 .contact__input-name {
   width: 65%;
+  padding: 10px;
 }
 @media screen and (max-width: 780px) {
   .contact__input-name {
@@ -202,6 +203,9 @@ img {
   flex-direction: column;
   padding: 40px 64px;
   background-color: #ffffff;
+}
+.contact__form textarea {
+  padding: 10px;
 }
 @media screen and (max-width: 375px) {
   .contact__form {
