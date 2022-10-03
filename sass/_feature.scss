@@ -15,21 +15,35 @@
       text-align: center;
     }
     display: flex;
-    justify-content: space-between;
+    gap: 0 calc(138 / 1020 * 100%);
     margin-bottom: 60px;
   }
   &__box-title {
     display: block;
   }
+  &__box-img {
+    width: calc(380 / 1020 * 100%);
+    @include mq(tab) {
+      width: 100%;
+    }
+  }
   &__box-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: calc(502 / 1020 * 100%);
+    @include mq(tab) {
+      margin: auto;
+      width: 100%;
+    }
     h3 {
       padding-bottom: 54px;
       font-weight: bold;
       font-size: 2.4rem;
       line-height: 48px;
+      @include mq(tab) {
+        padding-top: 30px;
+      }
       @include mq(sp) {
         text-align: start;
       }
