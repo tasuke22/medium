@@ -12,6 +12,10 @@
   padding-bottom: 26px;
   border: solid 1px #dddddd;
   border-radius: 8px;
+  :hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
 }
 .swiper-wrapper {
   width: 500px;
