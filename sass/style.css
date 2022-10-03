@@ -1,17 +1,22 @@
 @charset "UTF-8";
 body {
   width: 100%;
+  line-height: 1.5;
   color: #333333;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-family: "Noto Sans JP", sans-serif;
 }
 
 html {
   font-weight: 400;
   font-size: 62.5%;
-  line-height: 1.5;
 }
 
+@media (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+}
 img {
   max-width: 100%;
   vertical-align: bottom;
