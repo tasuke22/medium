@@ -2,10 +2,10 @@
 
 .swiper {
   margin-bottom: 90px;
+  padding-top: 70px;
 }
 
 .swiper-wrapper {
-  padding-top: 70px;
   margin: auto;
 }
 
@@ -13,7 +13,7 @@
   @include mq(sp) {
     margin: auto;
   }
-  margin: auto;
+  // margin: auto;
   padding-bottom: 26px;
   border: solid 1px #dddddd;
   border-radius: 8px;

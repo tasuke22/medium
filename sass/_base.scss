@@ -85,6 +85,9 @@ img {
 }
 
 br {
+  @include mq(tab) {
+    display: none;
+  }
   @include mq(sp) {
     display: none;
   }
