@@ -476,25 +476,28 @@ img {
   margin-bottom: 90px;
 }
 
-.swiper_box {
-  max-width: 320px;
+.swiper-wrapper {
+  padding-top: 70px;
+  margin: auto;
+}
+
+.swiper-slide {
+  margin: auto;
   padding-bottom: 26px;
   border: solid 1px #dddddd;
   border-radius: 8px;
 }
 @media screen and (max-width: 375px) {
-  .swiper_box {
+  .swiper-slide {
     margin: auto;
   }
 }
-.swiper_box :hover {
+.swiper-slide img {
+  width: 100%;
+}
+.swiper-slide :hover {
   opacity: 0.7;
   cursor: pointer;
-}
-
-.swiper-wrapper {
-  width: 500px;
-  padding-top: 70px;
 }
 
 .works__text {

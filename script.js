@@ -30,8 +30,6 @@ $(function () {
 const swiper = new Swiper(".swiper", {
   loop: true,
   centeredSlides: true,
-  slidesPerView: 1,
-  spaceBetween: 0,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
@@ -40,15 +38,6 @@ const swiper = new Swiper(".swiper", {
   effect: "slide",
   touchStartForcePreventDefault: false,
   passiveListeners: false,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
   breakpoints: {
     375: {
       // 375 ~ 780
@@ -62,8 +51,8 @@ const swiper = new Swiper(".swiper", {
     },
     960: {
       // 960 ~
-      slidesPerView: 5,
-      spaceBetween: 20,
+      slidesPerView: 3.5,
+      spaceBetween: 56,
     },
   },
 });
