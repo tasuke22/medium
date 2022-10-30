@@ -30,10 +30,10 @@ $(function () {
 const swiper = new Swiper(".swiper", {
   loop: true,
   centeredSlides: true,
-  // autoplay: {
-  //   delay: 5000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
   speed: 2000,
   effect: "slide",
   touchStartForcePreventDefault: false,
